@@ -47,6 +47,10 @@ Applying style to osm2pgsql import
 $ osm2pgsql -c -d osm -U postgres -H localhost -S /usr/share/osm2pgsql/roads.style iraq-latest.osm.pbf
 ```
 
+Optional parameters are ``-a`` Append Data, instead of ``-c`` which will overwrite the existing data. 
+
+### Style File
+
 A good Style file
 
 ```text
