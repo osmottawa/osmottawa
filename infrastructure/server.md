@@ -73,20 +73,30 @@ Postgresql.conf & Pg_hba.conf
 + Never fun trying to figure those out, however if you have any connection problems it will be modifying those files to allow incoming connections. These files can be found at:
 
 ```
-/etc/postgresql/9.3/main/pg_hba.conf
+$ sudo nano /etc/postgresql/9.3/main/pg_hba.conf
 
-pg_hba.conf >> local   all             postgres                                md5
-postgresql.conf >> listen_addresses = '*'
-sudo /etc/init.d/postgresql reload
+local   all  postgres   md5
+
+$ sudo nano postgresql.conf
+listen_addresses = '*'
+
+$ sudo /etc/init.d/postgresql reload
+
 or restart if editing the postgresql.conf
+
+$ sudo service postgresql restart
+* Restarting PostgreSQL 9.3 database server [OK]
 ```
 
-Change HOT TM to port 80
-+ Once you have TM fully functioning, you will want to deploy it on port 80, change the Production.ini file and replace the port 6543 > 80.
+## Serve HTTP
 
-Running Tasking Manager in background
-+ When you connect to the Ubuntu instance, you will want to launch the TM and close your Terminal window without closing the application, to do so you will need to add setid before deploying the app.
+The OSM Canada server is using Nginx as HTTP server, this enables multiple applications running on a single server to be hosted. Having Nginx allows to have the hosting Tasking Manager (tasks.osmcanada.ca) on port 6432 and the port 80 pointing to the Wordpress blog.
+
+## Running Tasking Manager in background
+
+When you connect to the Ubuntu instance, you will want to launch the TM and close your Terminal window without closing the application, to do so you will need to add setid before deploying the app.
 
 ```
-~$ sudo setsid ./env/bin/pserve --reload production.ini
+$ cd ~/osm-tasking-manager2/
+$ sudo setsid ./env/bin/pserve --reload production.ini
 ```
