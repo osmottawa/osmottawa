@@ -36,7 +36,6 @@ way         waterway    text
 way         power       text
 way         natural     text
 node,way    place       text    
-way         wood        text
 water       water       text
 
 #node,way    created_by  text     linear
