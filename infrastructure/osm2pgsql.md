@@ -20,8 +20,10 @@ $ sudo service postgresql restart
 ## Using osm2pgsql
 
 ```bash
-$ osm2pgsql -c -d osm -U postgres -H localhost iraq-latest.osm.pbf
+$ osm2pgsql -c -d osm -U postgres -H localhost iraq-latest.osm.pbf  -l -W
 ```
+Opitional values ``-l`` imports data into latlng (WGS84), ``-W`` forces password prompt, use this on the Ubuntu Server.
+
 
 ### Changing Style
 
@@ -37,6 +39,7 @@ $ osm2pgsql -c -d osm -U postgres -H localhost -S /usr/share/osm2pgsql/roads.sty
 ```
 
 A good Style file
+
 ```text
 node        capital     text
 node        population  text
