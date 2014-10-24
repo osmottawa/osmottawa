@@ -12,3 +12,8 @@
 - [osm2pgsql - CLI](http://wiki.openstreetmap.org/wiki/Osm2pgsql)
 - [osm2pgsql - Tutorial](https://github.com/osmottawa/osmottawa/blob/master/infrastructure/osm2pgsql.md)
 - [overpass - Web interface](http://overpass-turbo.eu/)
+- [geocoder - Python Module](https://github.com/DenisCarriere/geocoder)
+
+## Tutorials
+
+- Using Overpass API with Python
