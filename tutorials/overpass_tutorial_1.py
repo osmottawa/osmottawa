@@ -1,7 +1,5 @@
-import osmapi
 import geocoder
 import requests
-import os
 
 # Geocode Address from the OSM server
 # Website: https://github.com/DenisCarriere/geocoder
