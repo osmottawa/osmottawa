@@ -41,10 +41,13 @@ wget -O iraq.osm.pbf http://export.hotosm.org/download/022356/rawdata.osm.pbf
 ```
 
 ```bash
-$ osm2pgsql -c -d gisdb -U postgres -H localhost iraq.osm.pbf  -l -W
+$ osm2pgsql -c -d gisdb -U postgres -H localhost iraq.osm.pbf  -l -W -x -s
 ```
 Opitional values ``-l`` imports data into latlng (WGS84), ``-W`` forces password prompt, use this on the Ubuntu Server.
 
+Slim mode can be enable if you are receiving some errors `-s`
+
+Extra Attributes to retrieve OSM User name & ID `-x` if you add the attributes in the default.style
 
 ### Changing Style
 
