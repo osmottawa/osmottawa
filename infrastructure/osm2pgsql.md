@@ -1,3 +1,9 @@
+## Install
+
+```bash
+$ sudo apt-get install osm2pgsql
+```
+
 ## Connect all users to PostgreSQL
 
 ```bash
