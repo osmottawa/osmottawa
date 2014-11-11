@@ -25,6 +25,12 @@ $ sudo service postgresql restart
 
 ## Using osm2pgsql
 
+### Create PostgreSQL DB
+
+Using PgAdmin3 you will create a new Database `gisdb` with postgres as the user and create the PostGIS extension.
+
+Documentation can be found on [LearnOSM](http://learnosm.org/en/osm-data/setting-up-postgresql/)
+
 ### Download Data
 
 Using the [HOT Export](http://export.hotosm.org/) you can download a large area directly from the latest OSM server.
