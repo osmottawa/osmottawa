@@ -36,8 +36,10 @@ Finally connecting to Amazon EC2
 + [HOT Tasking Manager V2](https://github.com/hotosm/osm-tasking-manager2)
 + [Setting up PostgreSQL + PostGIS on Ubuntu](https://help.ubuntu.com/community/PostgreSQL)
 
-The command to install PostGIS is kinda hidden, you will need to enter:
+The command to install PostGIS, you will need to enter:
 ```
+~$ sudo apt-get install postgis
+# OR
 ~$ sudo apt-get install postgresql-9.3-postgis-2.1
 ```
 
@@ -54,11 +56,11 @@ Install PostgreSQL Dev. This is a requirement for the Tasking Manager setup.py d
 
 To install Psycopg2, you must install [Python-Dev first](http://stackoverflow.com/questions/5420789/how-to-install-psycopg2-with-pip-on-python).
 
-Ubuntu Apt-get installs
+Ubuntu Apt-get installs or using the better apt install `aptitude`
 
 ```
-sudo apt-get install git
-sudo apt-get install python-pip
+sudo apt-get install git aptitude
+sudo aptitude install python-pip
 sudo pip install virtualenv
 ```
 
