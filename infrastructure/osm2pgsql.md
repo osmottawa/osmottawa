@@ -41,7 +41,7 @@ wget -O iraq.osm.pbf http://export.hotosm.org/download/022356/rawdata.osm.pbf
 ```
 
 ```bash
-$ osm2pgsql -c -d osm -U postgres -H localhost iraq.osm.pbf  -l -W
+$ osm2pgsql -c -d gisdb -U postgres -H localhost iraq.osm.pbf  -l -W
 ```
 Opitional values ``-l`` imports data into latlng (WGS84), ``-W`` forces password prompt, use this on the Ubuntu Server.
 
@@ -56,7 +56,7 @@ $ sudo nano default.style
 Applying style to osm2pgsql import
 
 ```bash
-$ osm2pgsql -c -d osm -U postgres -H localhost -S /usr/share/osm2pgsql/roads.style iraq-latest.osm.pbf
+$ osm2pgsql -c -d gisdb -U postgres -H localhost -S /usr/share/osm2pgsql/roads.style iraq-latest.osm.pbf
 ```
 
 Optional parameters are ``-a`` Append Data, instead of ``-c`` which will overwrite the existing data. 
