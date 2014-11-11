@@ -82,7 +82,7 @@ local   all  postgres   md5
 $ sudo nano postgresql.conf
 listen_addresses = '*'
 
-$ sudo /etc/init.d/postgresql reload
+$ sudo service postgresql reload
 
 or restart if editing the postgresql.conf
 
