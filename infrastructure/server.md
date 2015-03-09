@@ -102,3 +102,14 @@ When you connect to the Ubuntu instance, you will want to launch the TM and clos
 $ cd ~/osm-tasking-manager2/
 $ sudo setsid ./env/bin/pserve --reload production.ini
 ```
+
+If the process is already running, you must stop python and reload it again.
+
+```bash
+$ sudo pkill python
+```
+
+### Updating Tasking Manager
+
+Simply run a `git pull` inside the osm tasking manager folder and restart the python server.
+
