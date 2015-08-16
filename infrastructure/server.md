@@ -90,6 +90,19 @@ $ sudo service postgresql restart
 * Restarting PostgreSQL 9.3 database server [OK]
 ```
 
+## Install psycopg2
+
+```python
+if pip not installed:
+
+sudo apt-get install python-pip
+and then:
+
+sudo apt-get update
+sudo apt-get install libpq-dev python-dev
+sudo pip install psycopg2
+```
+
 ## Serve HTTP
 
 The OSM Canada server is using Nginx as HTTP server, this enables multiple applications running on a single server to be hosted. Having Nginx allows to have the hosting Tasking Manager (tasks.osmcanada.ca) on port 6432 and the port 80 pointing to the Wordpress blog.
