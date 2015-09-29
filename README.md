@@ -14,6 +14,7 @@ This repo is divided into various groups:
 
 - AWS Ubuntu server setup
 - OSM & PostGIS tools (osm2pgsql)
+- Main website
 
 ##[Ideas](https://github.com/osmottawa/osmottawa/tree/master/ideas)
 
