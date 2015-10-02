@@ -20,19 +20,19 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>osmcanada - <?php if($type=="NewUser"){echo "New User";} ?></title>
+		<title>osmcanada - <?php if(strtolower($type)=="newuser"){echo "New User";} ?></title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
 		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/skel-panels.min.js"></script>
-		<script src="js/init.js"></script>
+		<script src="/js/skel.min.js"></script>
+		<script src="/js/skel-panels.min.js"></script>
+		<script src="/js/init.js"></script>
 		<noscript>
-			<link rel="stylesheet" href="css/skel-noscript.css" />
-			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="/css/skel-noscript.css" />
+			<link rel="stylesheet" href="/css/style.css" />
 		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
@@ -52,11 +52,11 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li><a href="index.html">Homepage</a></li>
-                            <li class="active"><a href="tutorial.php?id=NewUser">Start Mapping</a></li>
+							<li><a href="/index.html">Homepage</a></li>
+                            <li class="active"><a href="/tutorial/NewUser">Start Mapping</a></li>
 							<li><a href="http://tasks.osmcanada.ca">Task Manager</a></li>
 							<li><a href="http://www.meetup.com/openstreetmap-ottawa/">Events</a></li>
-							<li><a href="about.html">About</a></li>
+							<li><a href="/about.html">About</a></li>
 						</ul>
 					</nav>
 
@@ -68,14 +68,14 @@
 		<div id="main">
 			<div class="container">
 				   <?php
-						if($type=="NewUser")
+						if(strtolower($type)=="newuser")
 						{
 							$html = <<< EOT
 							<p>Anyone can change the data in OpenStreetMap itself and add new data. This step-by-step guide shows how to do it:</p><br/>
 						<div class="row">
 							<div id="sidebar" class="1u">
 								<section>
-									<img width="80" height="80" alt="(1)" src="images/1.png"></img>
+									<img width="80" height="80" alt="(1)" src="/images/1.png"></img>
 								</section>
 							</div>
 							<div id="sidebar" class="5u">
@@ -86,14 +86,14 @@
 							</div>
 							<div id="sidebar" class="3u">
 								<section>
-									<img height="400" width="393" alt="Sign-up" src="images/signup.png"></img>
+									<img height="400" width="393" alt="Sign-up" src="/images/signup.png"></img>
 								</section>
 							</div>
 						</div>
 						<div class="row">
 							<div id="sidebar" class="1u">
 								<section>
-									<img width="80" height="80" alt="(1)" src="images/2.png"></img>
+									<img width="80" height="80" alt="(1)" src="/images/2.png"></img>
 								</section>
 							</div>
 							<div id="sidebar" class="5u">
@@ -105,7 +105,7 @@
 						<div class="row">
 							<div id="sidebar" class="1u">
 								<section>
-									<img width="80" height="80" alt="(1)" src="images/3.png"></img>
+									<img width="80" height="80" alt="(1)" src="/images/3.png"></img>
 								</section>
 							</div>
 							<div id="sidebar" class="5u">
@@ -115,14 +115,14 @@
 							</div>
 							<div id="sidebar" class="5u">
 								<section>
-									<img height="400" width="566" alt="Editing OSM" src="images/editosm.png"></img>
+									<img height="400" width="566" alt="Editing OSM" src="/images/editosm.png"></img>
 								</section>
 							</div>
 						</div>
 						<div class="row">
 							<div id="sidebar" class="1u">
 								<section>
-									<img width="80" height="80" alt="(1)" src="images/4.png"></img>
+									<img width="80" height="80" alt="(1)" src="/images/4.png"></img>
 								</section>
 							</div>
 							<div id="sidebar" class="5u">
@@ -132,14 +132,14 @@
 							</div>
 							<div id="sidebar" class="5u">
 								<section>
-									<img height="400" width="566" alt="Beginning to edit OSM" src="images/editstart.png"></img>
+									<img height="400" width="566" alt="Beginning to edit OSM" src="/images/editstart.png"></img>
 								</section>
 							</div>
 						</div>
 						<div class="row">
 							<div id="sidebar" class="1u">
 								<section>
-									<img width="80" height="80" alt="(1)" src="images/dots.png"></img>
+									<img width="80" height="80" alt="(1)" src="/images/dots.png"></img>
 								</section>
 							</div>
 							<div id="sidebar" class="5u">
@@ -149,7 +149,7 @@
 							</div>
 							<div id="sidebar" class="5u">
 								<section>
-									<img height="400" width="541" alt="JOSM Editor" src="images/josm.png"></img>
+									<img height="400" width="541" alt="JOSM Editor" src="/images/josm.png"></img>
 								</section>
 							</div>
 						</div>
