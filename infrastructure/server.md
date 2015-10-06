@@ -78,6 +78,7 @@ Postgresql.conf & Pg_hba.conf
 $ sudo nano /etc/postgresql/9.3/main/pg_hba.conf
 
 local   all  postgres   md5
+host all all 0.0.0.0/0 md5
 
 $ sudo nano postgresql.conf
 listen_addresses = '*'
