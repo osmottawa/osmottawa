@@ -165,7 +165,16 @@ EOT;
 	<!-- Footer -->
 		<div id="footer">
 			<div class="container">
-
+				<div class="row">
+					<div class="3u">
+						<section>
+							<ul class="style1">
+								<li><a href="http://www.twitter.com/OSMCanada"><img src="/images/twitter_logo_white.png" width="78" height="63" alt="Twitter"></a></li>
+                                <li><a href="mailto:&#111;&#112;&#101;&#110;&#115;&#116;&#114;&#101;&#101;&#116;&#109;&#097;&#112;&#115;&#099;&#097;&#110;&#097;&#100;&#097;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"><img src="/images/mail.png" width="78" height="78" alt="Contact"></a></li>
+							</ul>
+						</section>
+					</div>
+				</div>
 			</div>
 		</div>
 	<!-- Footer -->
